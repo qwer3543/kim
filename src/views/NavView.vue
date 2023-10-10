@@ -76,171 +76,118 @@
                 </li>
                 </ul>
             </li>
-            <li class="nav-item">
+
+            <li class="nav-item"> <!-- - -->
                 <!-- label-->
                 <div class="row navbar-vertical-label-wrapper mt-3 mb-2">
-                <div class="col-auto navbar-vertical-label">App
+                <div class="col-auto navbar-vertical-label">TEST
                 </div>
                 <div class="col ps-0">
                     <hr class="mb-0 navbar-vertical-divider" />
                 </div>
                 </div>
-                <!-- parent pages--><a class="nav-link" href="../../app/calendar.html" role="button">
-                <div class="d-flex align-items-center"><span class="nav-link-icon"><span class="fas fa-calendar-alt"></span></span><span class="nav-link-text ps-1">Calendar</span>
-                </div>
-                </a>
-                <!-- parent pages--><a class="nav-link" href="../../app/chat.html" role="button">
-                <div class="d-flex align-items-center"><span class="nav-link-icon"><span class="fas fa-comments"></span></span><span class="nav-link-text ps-1">Chat</span>
-                </div>
-                </a>
-                <!-- parent pages--><a class="nav-link dropdown-indicator" href="#email" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="email">
-                <div class="d-flex align-items-center"><span class="nav-link-icon"><span class="fas fa-envelope-open"></span></span><span class="nav-link-text ps-1">Email</span>
-                </div>
-                </a>
-                <ul class="nav collapse" id="email">
-                <li class="nav-item"><a class="nav-link" href="../../app/email/inbox.html">
-                    <div class="d-flex align-items-center"><span class="nav-link-text ps-1">Inbox</span>
+
+                <!-- parent pages T_1 -->
+                <a class="nav-link" href="#" role="button">
+                    <div class="d-flex align-items-center">
+                        <span class="nav-link-icon">
+                            <span class="fas fa-calendar-alt"></span>
+                        </span>
+                        <span class="nav-link-text ps-1">T_1</span>
                     </div>
-                    </a>
-                    <!-- more inner pages-->
-                </li>
-                <li class="nav-item"><a class="nav-link" href="../../app/email/email-detail.html">
-                    <div class="d-flex align-items-center"><span class="nav-link-text ps-1">Email detail</span>
+                </a>
+
+                <!-- parent pages T_2 -->
+                <a class="nav-link dropdown-indicator" href="#T_2" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="T_2">
+                    <div class="d-flex align-items-center">
+                        <span class="nav-link-icon">
+                            <span class="fas fa-envelope-open"></span>
+                        </span>
+                        <span class="nav-link-text ps-1">T_2</span>
                     </div>
-                    </a>
-                    <!-- more inner pages-->
-                </li>
-                <li class="nav-item"><a class="nav-link" href="../../app/email/compose.html">
-                    <div class="d-flex align-items-center"><span class="nav-link-text ps-1">Compose</span>
-                    </div>
-                    </a>
-                    <!-- more inner pages-->
-                </li>
+                </a>
+                <ul class="nav collapse" id="T_2">
+                    <li class="nav-item"> <!-- - -->
+                        <a class="nav-link" href="#">
+                            <div class="d-flex align-items-center">
+                                <span class="nav-link-text ps-1">T_2-1</span>
+                            </div>
+                        </a>
+                    </li>
                 </ul>
-                <!-- parent pages--><a class="nav-link dropdown-indicator" href="#events" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="events">
-                <div class="d-flex align-items-center"><span class="nav-link-icon"><span class="fas fa-calendar-day"></span></span><span class="nav-link-text ps-1">Events</span>
-                </div>
+
+                <!-- parent pages T_3 -->
+                <a class="nav-link dropdown-indicator" href="#T_3" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="T_3">
+                    <div class="d-flex align-items-center">
+                        <span class="nav-link-icon">
+                            <span class="fas fa-shopping-cart"></span>
+                        </span>
+                        <span class="nav-link-text ps-1">T_3</span>
+                    </div>
                 </a>
-                <ul class="nav collapse" id="events">
-                <li class="nav-item"><a class="nav-link" href="../../app/events/create-an-event.html">
-                    <div class="d-flex align-items-center"><span class="nav-link-text ps-1">Create an event</span>
-                    </div>
-                    </a>
-                    <!-- more inner pages-->
-                </li>
-                <li class="nav-item"><a class="nav-link" href="../../app/events/event-detail.html">
-                    <div class="d-flex align-items-center"><span class="nav-link-text ps-1">Event detail</span>
-                    </div>
-                    </a>
-                    <!-- more inner pages-->
-                </li>
-                <li class="nav-item"><a class="nav-link" href="../../app/events/event-list.html">
-                    <div class="d-flex align-items-center"><span class="nav-link-text ps-1">Event list</span>
-                    </div>
-                    </a>
-                    <!-- more inner pages-->
-                </li>
+                <ul class="nav collapse" id="T_3">
+                    <li class="nav-item"> <!-- - -->
+                        <a class="nav-link dropdown-indicator" href="#T_3-1" data-bs-toggle="collapse" aria-expanded="false" aria-controls="T_3">
+                            <div class="d-flex align-items-center">
+                                <span class="nav-link-text ps-1">T_3-1</span>
+                            </div>
+                        </a>
+                        <!-- more inner pages T_3-1 -->
+                        <ul class="nav collapse" id="T_3-1">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <div class="d-flex align-items-center">
+                                        <span class="nav-link-text ps-1">1</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"> <!-- - -->
+                        <a class="nav-link dropdown-indicator" href="#T_3-2" data-bs-toggle="collapse" aria-expanded="false" aria-controls="T_3">
+                            <div class="d-flex align-items-center">
+                                <span class="nav-link-text ps-1">T_3-2</span>
+                            </div>
+                        </a>
+                        <!-- more inner pages T_3-2 -->
+                        <ul class="nav collapse" id="T_3-2">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <div class="d-flex align-items-center">
+                                    <span class="nav-link-text ps-1">1</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <div class="d-flex align-items-center">
+                                    <span class="nav-link-text ps-1">2</span>
+                                </div>
+                            </a>
+                        </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"> <!-- - -->
+                        <a class="nav-link" href="#">
+                            <div class="d-flex align-items-center">
+                                <span class="nav-link-text ps-1">T_3-3</span>
+                            </div>
+                        </a>
+                    </li>
                 </ul>
-                <!-- parent pages--><a class="nav-link dropdown-indicator" href="#e-commerce" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="e-commerce">
-                <div class="d-flex align-items-center"><span class="nav-link-icon"><span class="fas fa-shopping-cart"></span></span><span class="nav-link-text ps-1">E commerce</span>
-                </div>
+
+                <!-- parent pages T_4 -->
+                <a class="nav-link dropdown-indicator" href="#T_4" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="T_4">
+                    <div class="d-flex align-items-center">
+                        <span class="nav-link-icon">
+                            <span class="fas fa-graduation-cap"></span>
+                        </span>
+                        <span class="nav-link-text ps-1">T_4</span>
+                        <span class="badge rounded-pill ms-2 badge-subtle-success">New</span>
+                    </div>
                 </a>
-                <ul class="nav collapse" id="e-commerce">
-                <li class="nav-item"><a class="nav-link dropdown-indicator" href="#product" data-bs-toggle="collapse" aria-expanded="false" aria-controls="e-commerce">
-                    <div class="d-flex align-items-center"><span class="nav-link-text ps-1">Product</span>
-                    </div>
-                    </a>
-                    <!-- more inner pages-->
-                    <ul class="nav collapse" id="product">
-                    <li class="nav-item"><a class="nav-link" href="../../app/e-commerce/product/product-list.html">
-                        <div class="d-flex align-items-center"><span class="nav-link-text ps-1">Product list</span>
-                        </div>
-                        </a>
-                        <!-- more inner pages-->
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="../../app/e-commerce/product/product-grid.html">
-                        <div class="d-flex align-items-center"><span class="nav-link-text ps-1">Product grid</span>
-                        </div>
-                        </a>
-                        <!-- more inner pages-->
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="../../app/e-commerce/product/product-details.html">
-                        <div class="d-flex align-items-center"><span class="nav-link-text ps-1">Product details</span>
-                        </div>
-                        </a>
-                        <!-- more inner pages-->
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="../../app/e-commerce/product/add-product.html">
-                        <div class="d-flex align-items-center"><span class="nav-link-text ps-1">Add product</span>
-                        </div>
-                        </a>
-                        <!-- more inner pages-->
-                    </li>
-                    </ul>
-                </li>
-                <li class="nav-item"><a class="nav-link dropdown-indicator" href="#orders" data-bs-toggle="collapse" aria-expanded="false" aria-controls="e-commerce">
-                    <div class="d-flex align-items-center"><span class="nav-link-text ps-1">Orders</span>
-                    </div>
-                    </a>
-                    <!-- more inner pages-->
-                    <ul class="nav collapse" id="orders">
-                    <li class="nav-item"><a class="nav-link" href="../../app/e-commerce/orders/order-list.html">
-                        <div class="d-flex align-items-center"><span class="nav-link-text ps-1">Order list</span>
-                        </div>
-                        </a>
-                        <!-- more inner pages-->
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="../../app/e-commerce/orders/order-details.html">
-                        <div class="d-flex align-items-center"><span class="nav-link-text ps-1">Order details</span>
-                        </div>
-                        </a>
-                        <!-- more inner pages-->
-                    </li>
-                    </ul>
-                </li>
-                <li class="nav-item"><a class="nav-link" href="../../app/e-commerce/customers.html">
-                    <div class="d-flex align-items-center"><span class="nav-link-text ps-1">Customers</span>
-                    </div>
-                    </a>
-                    <!-- more inner pages-->
-                </li>
-                <li class="nav-item"><a class="nav-link" href="../../app/e-commerce/customer-details.html">
-                    <div class="d-flex align-items-center"><span class="nav-link-text ps-1">Customer details</span>
-                    </div>
-                    </a>
-                    <!-- more inner pages-->
-                </li>
-                <li class="nav-item"><a class="nav-link" href="../../app/e-commerce/shopping-cart.html">
-                    <div class="d-flex align-items-center"><span class="nav-link-text ps-1">Shopping cart</span>
-                    </div>
-                    </a>
-                    <!-- more inner pages-->
-                </li>
-                <li class="nav-item"><a class="nav-link" href="../../app/e-commerce/checkout.html">
-                    <div class="d-flex align-items-center"><span class="nav-link-text ps-1">Checkout</span>
-                    </div>
-                    </a>
-                    <!-- more inner pages-->
-                </li>
-                <li class="nav-item"><a class="nav-link" href="../../app/e-commerce/billing.html">
-                    <div class="d-flex align-items-center"><span class="nav-link-text ps-1">Billing</span>
-                    </div>
-                    </a>
-                    <!-- more inner pages-->
-                </li>
-                <li class="nav-item"><a class="nav-link" href="../../app/e-commerce/invoice.html">
-                    <div class="d-flex align-items-center"><span class="nav-link-text ps-1">Invoice</span>
-                    </div>
-                    </a>
-                    <!-- more inner pages-->
-                </li>
-                </ul>
-                <!-- parent pages--><a class="nav-link dropdown-indicator" href="#e-learning" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="e-learning">
-                <div class="d-flex align-items-center"><span class="nav-link-icon"><span class="fas fa-graduation-cap"></span></span><span class="nav-link-text ps-1">E learning</span><span class="badge rounded-pill ms-2 badge-subtle-success">New</span>
-                </div>
-                </a>
-                <ul class="nav collapse" id="e-learning">
-                <li class="nav-item"><a class="nav-link dropdown-indicator" href="#course" data-bs-toggle="collapse" aria-expanded="false" aria-controls="e-learning">
+                <ul class="nav collapse" id="T_4">
+                <li class="nav-item"><a class="nav-link dropdown-indicator" href="#course" data-bs-toggle="collapse" aria-expanded="false" aria-controls="T_4">
                     <div class="d-flex align-items-center"><span class="nav-link-text ps-1">Course</span>
                     </div>
                     </a>
