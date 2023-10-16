@@ -1,6 +1,7 @@
 <template>
   <div>
   <main class="main" id="top">
+  <ModalPopUp />
     <div :class="isFluidMode ? 'container-fluid' : 'container'" data-layout="container">
       <NavView />
       <Content />
@@ -19,6 +20,7 @@
   import Content from './views/Content.vue';
   import ModalView from './views/ModalView.vue';
   import ThemeControlView from './views/ThemeControlView.vue';
+  import ModalPopUp from './views/ModalPopUp.vue';
   const isFluidMode = ref(isFluid());
   onMounted(() => {
     setFluid(isFluidMode);

@@ -1,11 +1,13 @@
-<!-- 탑 영역 -->
 <template>
+    <!-- 탑 영역 -->
     <div class="content">
         <nav class="navbar navbar-light navbar-glass navbar-top navbar-expand">
 
         <button class="btn navbar-toggler-humburger-icon navbar-toggler me-1 me-sm-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarVerticalCollapse" aria-controls="navbarVerticalCollapse" aria-expanded="false" aria-label="Toggle Navigation"><span class="navbar-toggle-icon"><span class="toggle-line"></span></span></button>
-        <a class="navbar-brand me-1 me-sm-3" href="../../index.html">
-            <div class="d-flex align-items-center"><img class="me-2" src="../../assets/img/icons/spot-illustrations/falcon.png" alt="" width="40" /><span class="font-sans-serif text-primary">falcon</span>
+        <a class="navbar-brand me-1 me-sm-3" href="#">
+            <div class="d-flex align-items-center">
+                <img class="me-2" src="../../assets/img/icons/spot-illustrations/falcon.png" alt="" width="40" />
+                <span class="font-sans-serif text-primary">BLPS&C</span>
             </div>
         </a>
         <ul class="navbar-nav align-items-center d-none d-lg-block">
@@ -119,243 +121,287 @@
             </div>
             </li>
         </ul>
+        <!-- 서치바 다음 영역 -->
         <ul class="navbar-nav navbar-nav-icons ms-auto flex-row align-items-center">
             <li class="nav-item ps-2 pe-0">
-            <div class="dropdown theme-control-dropdown"><a class="nav-link d-flex align-items-center dropdown-toggle fa-icon-wait fs-0 pe-1 py-0" href="#" role="button" id="themeSwitchDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="fas fa-sun fs-2" data-fa-transform="shrink-2" data-theme-dropdown-toggle-icon="light"></span><span class="fas fa-moon fs-2" data-fa-transform="shrink-3" data-theme-dropdown-toggle-icon="dark"></span><span class="fas fa-adjust fs-2" data-fa-transform="shrink-2" data-theme-dropdown-toggle-icon="auto"></span></a>
-                <div class="dropdown-menu dropdown-menu-end dropdown-caret border py-0 mt-3" aria-labelledby="themeSwitchDropdown">
-                <div class="bg-white dark__bg-1000 rounded-2 py-2">
-                    <button class="dropdown-item d-flex align-items-center gap-2" type="button" value="light" data-theme-control="theme"><span class="fas fa-sun"></span>Light<span class="fas fa-check dropdown-check-icon ms-auto text-600"></span></button>
-                    <button class="dropdown-item d-flex align-items-center gap-2" type="button" value="dark" data-theme-control="theme"><span class="fas fa-moon" data-fa-transform=""></span>Dark<span class="fas fa-check dropdown-check-icon ms-auto text-600"></span></button>
-                    <button class="dropdown-item d-flex align-items-center gap-2" type="button" value="auto" data-theme-control="theme"><span class="fas fa-adjust" data-fa-transform=""></span>Auto<span class="fas fa-check dropdown-check-icon ms-auto text-600"></span></button>
+                <div class="dropdown theme-control-dropdown">
+                    <a class="nav-link d-flex align-items-center dropdown-toggle fa-icon-wait fs-0 pe-1 py-0" href="#" role="button" id="themeSwitchDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="fas fa-sun fs-2" data-fa-transform="shrink-2" data-theme-dropdown-toggle-icon="light"></span>
+                        <span class="fas fa-moon fs-2" data-fa-transform="shrink-3" data-theme-dropdown-toggle-icon="dark"></span>
+                        <span class="fas fa-adjust fs-2" data-fa-transform="shrink-2" data-theme-dropdown-toggle-icon="auto"></span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-end dropdown-caret border py-0 mt-3" aria-labelledby="themeSwitchDropdown">
+                        <div class="bg-white dark__bg-1000 rounded-2 py-2">
+                            <button class="dropdown-item d-flex align-items-center gap-2" type="button" value="light" data-theme-control="theme"><span class="fas fa-sun"></span>Light<span class="fas fa-check dropdown-check-icon ms-auto text-600"></span></button>
+                            <button class="dropdown-item d-flex align-items-center gap-2" type="button" value="dark" data-theme-control="theme"><span class="fas fa-moon" data-fa-transform=""></span>Dark<span class="fas fa-check dropdown-check-icon ms-auto text-600"></span></button>
+                            <button class="dropdown-item d-flex align-items-center gap-2" type="button" value="auto" data-theme-control="theme"><span class="fas fa-adjust" data-fa-transform=""></span>Auto<span class="fas fa-check dropdown-check-icon ms-auto text-600"></span></button>
+                        </div>
+                    </div>
                 </div>
-                </div>
-            </div>
             </li>
-            <li class="nav-item d-none d-sm-block">
-            <a class="nav-link px-0 notification-indicator notification-indicator-warning notification-indicator-fill fa-icon-wait" href="../../app/e-commerce/shopping-cart.html"><span class="fas fa-shopping-cart" data-fa-transform="shrink-7" style="font-size: 33px;"></span><span class="notification-indicator-number">1</span></a>
-
+            <!-- 메세지 영역 --> 
+            <li class="navbar-nav navbar-nav-icons ms-auto flex-row align-items-center">
+                <!-- Links trigger modal -->
+                <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#ModalMessage" data-bs-whatever="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-left-text-fill" viewBox="0 0 16 16">
+                        <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4.414a1 1 0 0 0-.707.293L.854 15.146A.5.5 0 0 1 0 14.793V2zm3.5 1a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 2.5a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 2.5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5z"/>
+                    </svg>
+                </a>
+                    <!-- Button trigger modal -->
+                    <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Open</button> -->
             </li>
+            <!-- 알림 영역 --> 
             <li class="nav-item dropdown">
-            <a class="nav-link notification-indicator notification-indicator-primary px-0 fa-icon-wait" id="navbarDropdownNotification" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-hide-on-body-scroll="data-hide-on-body-scroll"><span class="fas fa-bell" data-fa-transform="shrink-6" style="font-size: 33px;"></span></a>
-            <div class="dropdown-menu dropdown-caret dropdown-caret dropdown-menu-end dropdown-menu-card dropdown-menu-notification dropdown-caret-bg" aria-labelledby="navbarDropdownNotification">
-                <div class="card card-notification shadow-none">
-                <div class="card-header">
-                    <div class="row justify-content-between align-items-center">
-                    <div class="col-auto">
-                        <h6 class="card-header-title mb-0">Notifications</h6>
+                <a class="nav-link notification-indicator notification-indicator-primary px-0 fa-icon-wait" id="navbarDropdownNotification" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-hide-on-body-scroll="data-hide-on-body-scroll">
+                    <span class="fas fa-bell" data-fa-transform="shrink-6" style="font-size: 33px;"></span>
+                </a>
+                <div class="dropdown-menu dropdown-caret dropdown-caret dropdown-menu-end dropdown-menu-card dropdown-menu-notification dropdown-caret-bg" aria-labelledby="navbarDropdownNotification">
+                    <div class="card card-notification shadow-none">
+                    <div class="card-header">
+                        <div class="row justify-content-between align-items-center">
+                        <div class="col-auto">
+                            <h6 class="card-header-title mb-0">Notifications</h6>
+                        </div>
+                        <div class="col-auto ps-0 ps-sm-3"><a class="card-link fw-normal" href="#">Mark all as read</a></div>
+                        </div>
                     </div>
-                    <div class="col-auto ps-0 ps-sm-3"><a class="card-link fw-normal" href="#">Mark all as read</a></div>
+                    <div class="scrollbar-overlay" style="max-height:19rem">
+                        <div class="list-group list-group-flush fw-normal fs--1">
+                        <div class="list-group-title border-bottom">NEW</div>
+                        <div class="list-group-item">
+                            <a class="notification notification-flush notification-unread" href="#!">
+                            <div class="notification-avatar">
+                                <div class="avatar avatar-2xl me-3">
+                                <img class="rounded-circle" src="../../assets/img/team/1-thumb.png" alt="" />
+
+                                </div>
+                            </div>
+                            <div class="notification-body">
+                                <p class="mb-1"><strong>Emma Watson</strong> replied to your comment : "Hello world 😍"</p>
+                                <span class="notification-time"><span class="me-2" role="img" aria-label="Emoji">💬</span>Just now</span>
+
+                            </div>
+                            </a>
+
+                        </div>
+                        <div class="list-group-item">
+                            <a class="notification notification-flush notification-unread" href="#!">
+                            <div class="notification-avatar">
+                                <div class="avatar avatar-2xl me-3">
+                                <div class="avatar-name rounded-circle"><span>AB</span></div>
+                                </div>
+                            </div>
+                            <div class="notification-body">
+                                <p class="mb-1"><strong>Albert Brooks</strong> reacted to <strong>Mia Khalifa's</strong> status</p>
+                                <span class="notification-time"><span class="me-2 fab fa-gratipay text-danger"></span>9hr</span>
+
+                            </div>
+                            </a>
+
+                        </div>
+                        <div class="list-group-title border-bottom">EARLIER</div>
+                        <div class="list-group-item">
+                            <a class="notification notification-flush" href="#!">
+                            <div class="notification-avatar">
+                                <div class="avatar avatar-2xl me-3">
+                                <img class="rounded-circle" src="../../assets/img/icons/weather-sm.jpg" alt="" />
+
+                                </div>
+                            </div>
+                            <div class="notification-body">
+                                <p class="mb-1">The forecast today shows a low of 20&#8451; in California. See today's weather.</p>
+                                <span class="notification-time"><span class="me-2" role="img" aria-label="Emoji">🌤️</span>1d</span>
+
+                            </div>
+                            </a>
+
+                        </div>
+                        <div class="list-group-item">
+                            <a class="border-bottom-0 notification-unread  notification notification-flush" href="#!">
+                            <div class="notification-avatar">
+                                <div class="avatar avatar-xl me-3">
+                                <img class="rounded-circle" src="../../assets/img/logos/oxford.png" alt="" />
+
+                                </div>
+                            </div>
+                            <div class="notification-body">
+                                <p class="mb-1"><strong>University of Oxford</strong> created an event : "Causal Inference Hilary 2019"</p>
+                                <span class="notification-time"><span class="me-2" role="img" aria-label="Emoji">✌️</span>1w</span>
+
+                            </div>
+                            </a>
+
+                        </div>
+                        <div class="list-group-item">
+                            <a class="border-bottom-0 notification notification-flush" href="#!">
+                            <div class="notification-avatar">
+                                <div class="avatar avatar-xl me-3">
+                                <img class="rounded-circle" src="../../assets/img/team/10.jpg" alt="" />
+
+                                </div>
+                            </div>
+                            <div class="notification-body">
+                                <p class="mb-1"><strong>James Cameron</strong> invited to join the group: United Nations International Children's Fund</p>
+                                <span class="notification-time"><span class="me-2" role="img" aria-label="Emoji">🙋‍</span>2d</span>
+
+                            </div>
+                            </a>
+
+                        </div>
+                        </div>
+                    </div>
+                    <div class="card-footer text-center border-top"><a class="card-link d-block" href="../../app/social/notifications.html">View all</a></div>
                     </div>
                 </div>
-                <div class="scrollbar-overlay" style="max-height:19rem">
-                    <div class="list-group list-group-flush fw-normal fs--1">
-                    <div class="list-group-title border-bottom">NEW</div>
-                    <div class="list-group-item">
-                        <a class="notification notification-flush notification-unread" href="#!">
-                        <div class="notification-avatar">
-                            <div class="avatar avatar-2xl me-3">
-                            <img class="rounded-circle" src="../../assets/img/team/1-thumb.png" alt="" />
-
-                            </div>
-                        </div>
-                        <div class="notification-body">
-                            <p class="mb-1"><strong>Emma Watson</strong> replied to your comment : "Hello world 😍"</p>
-                            <span class="notification-time"><span class="me-2" role="img" aria-label="Emoji">💬</span>Just now</span>
-
-                        </div>
-                        </a>
-
-                    </div>
-                    <div class="list-group-item">
-                        <a class="notification notification-flush notification-unread" href="#!">
-                        <div class="notification-avatar">
-                            <div class="avatar avatar-2xl me-3">
-                            <div class="avatar-name rounded-circle"><span>AB</span></div>
-                            </div>
-                        </div>
-                        <div class="notification-body">
-                            <p class="mb-1"><strong>Albert Brooks</strong> reacted to <strong>Mia Khalifa's</strong> status</p>
-                            <span class="notification-time"><span class="me-2 fab fa-gratipay text-danger"></span>9hr</span>
-
-                        </div>
-                        </a>
-
-                    </div>
-                    <div class="list-group-title border-bottom">EARLIER</div>
-                    <div class="list-group-item">
-                        <a class="notification notification-flush" href="#!">
-                        <div class="notification-avatar">
-                            <div class="avatar avatar-2xl me-3">
-                            <img class="rounded-circle" src="../../assets/img/icons/weather-sm.jpg" alt="" />
-
-                            </div>
-                        </div>
-                        <div class="notification-body">
-                            <p class="mb-1">The forecast today shows a low of 20&#8451; in California. See today's weather.</p>
-                            <span class="notification-time"><span class="me-2" role="img" aria-label="Emoji">🌤️</span>1d</span>
-
-                        </div>
-                        </a>
-
-                    </div>
-                    <div class="list-group-item">
-                        <a class="border-bottom-0 notification-unread  notification notification-flush" href="#!">
-                        <div class="notification-avatar">
-                            <div class="avatar avatar-xl me-3">
-                            <img class="rounded-circle" src="../../assets/img/logos/oxford.png" alt="" />
-
-                            </div>
-                        </div>
-                        <div class="notification-body">
-                            <p class="mb-1"><strong>University of Oxford</strong> created an event : "Causal Inference Hilary 2019"</p>
-                            <span class="notification-time"><span class="me-2" role="img" aria-label="Emoji">✌️</span>1w</span>
-
-                        </div>
-                        </a>
-
-                    </div>
-                    <div class="list-group-item">
-                        <a class="border-bottom-0 notification notification-flush" href="#!">
-                        <div class="notification-avatar">
-                            <div class="avatar avatar-xl me-3">
-                            <img class="rounded-circle" src="../../assets/img/team/10.jpg" alt="" />
-
-                            </div>
-                        </div>
-                        <div class="notification-body">
-                            <p class="mb-1"><strong>James Cameron</strong> invited to join the group: United Nations International Children's Fund</p>
-                            <span class="notification-time"><span class="me-2" role="img" aria-label="Emoji">🙋‍</span>2d</span>
-
-                        </div>
-                        </a>
-
-                    </div>
-                    </div>
-                </div>
-                <div class="card-footer text-center border-top"><a class="card-link d-block" href="../../app/social/notifications.html">View all</a></div>
-                </div>
-            </div>
-
             </li>
-            <li class="nav-item dropdown px-1">
-            <a class="nav-link fa-icon-wait nine-dots p-1" id="navbarDropdownMenu" role="button" data-hide-on-body-scroll="data-hide-on-body-scroll" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="43" viewBox="0 0 16 16" fill="none">
-                <circle cx="2" cy="2" r="2" fill="#6C6E71"></circle>
-                <circle cx="2" cy="8" r="2" fill="#6C6E71"></circle>
-                <circle cx="2" cy="14" r="2" fill="#6C6E71"></circle>
-                <circle cx="8" cy="8" r="2" fill="#6C6E71"></circle>
-                <circle cx="8" cy="14" r="2" fill="#6C6E71"></circle>
-                <circle cx="14" cy="8" r="2" fill="#6C6E71"></circle>
-                <circle cx="14" cy="14" r="2" fill="#6C6E71"></circle>
-                <circle cx="8" cy="2" r="2" fill="#6C6E71"></circle>
-                <circle cx="14" cy="2" r="2" fill="#6C6E71"></circle>
-                </svg></a>
-            <div class="dropdown-menu dropdown-caret dropdown-caret dropdown-menu-end dropdown-menu-card dropdown-caret-bg" aria-labelledby="navbarDropdownMenu">
-                <div class="card shadow-none">
-                <div class="scrollbar-overlay nine-dots-dropdown">
-                    <div class="card-body px-3">
-                    <div class="row text-center gx-0 gy-0">
-                        <div class="col-4"><a class="d-block hover-bg-200 px-2 py-3 rounded-3 text-center text-decoration-none" href="../../pages/user/profile.html" target="_blank">
-                            <div class="avatar avatar-2xl"> <img class="rounded-circle" src="../../assets/img/team/3.jpg" alt="" /></div>
-                            <p class="mb-0 fw-medium text-800 text-truncate fs--2">Account</p>
-                        </a></div>
-                        <div class="col-4"><a class="d-block hover-bg-200 px-2 py-3 rounded-3 text-center text-decoration-none" href="https://themewagon.com/" target="_blank"><img class="rounded" src="../../assets/img/nav-icons/themewagon.png" alt="" width="40" height="40" />
-                            <p class="mb-0 fw-medium text-800 text-truncate fs--2 pt-1">Themewagon</p>
-                        </a></div>
-                        <div class="col-4"><a class="d-block hover-bg-200 px-2 py-3 rounded-3 text-center text-decoration-none" href="https://mailbluster.com/" target="_blank"><img class="rounded" src="../../assets/img/nav-icons/mailbluster.png" alt="" width="40" height="40" />
-                            <p class="mb-0 fw-medium text-800 text-truncate fs--2 pt-1">Mailbluster</p>
-                        </a></div>
-                        <div class="col-4"><a class="d-block hover-bg-200 px-2 py-3 rounded-3 text-center text-decoration-none" href="#!" target="_blank"><img class="rounded" src="../../assets/img/nav-icons/google.png" alt="" width="40" height="40" />
-                            <p class="mb-0 fw-medium text-800 text-truncate fs--2 pt-1">Google</p>
-                        </a></div>
-                        <div class="col-4"><a class="d-block hover-bg-200 px-2 py-3 rounded-3 text-center text-decoration-none" href="#!" target="_blank"><img class="rounded" src="../../assets/img/nav-icons/spotify.png" alt="" width="40" height="40" />
-                            <p class="mb-0 fw-medium text-800 text-truncate fs--2 pt-1">Spotify</p>
-                        </a></div>
-                        <div class="col-4"><a class="d-block hover-bg-200 px-2 py-3 rounded-3 text-center text-decoration-none" href="#!" target="_blank"><img class="rounded" src="../../assets/img/nav-icons/steam.png" alt="" width="40" height="40" />
-                            <p class="mb-0 fw-medium text-800 text-truncate fs--2 pt-1">Steam</p>
-                        </a></div>
-                        <div class="col-4"><a class="d-block hover-bg-200 px-2 py-3 rounded-3 text-center text-decoration-none" href="#!" target="_blank"><img class="rounded" src="../../assets/img/nav-icons/github-light.png" alt="" width="40" height="40" />
-                            <p class="mb-0 fw-medium text-800 text-truncate fs--2 pt-1">Github</p>
-                        </a></div>
-                        <div class="col-4"><a class="d-block hover-bg-200 px-2 py-3 rounded-3 text-center text-decoration-none" href="#!" target="_blank"><img class="rounded" src="../../assets/img/nav-icons/discord.png" alt="" width="40" height="40" />
-                            <p class="mb-0 fw-medium text-800 text-truncate fs--2 pt-1">Discord</p>
-                        </a></div>
-                        <div class="col-4"><a class="d-block hover-bg-200 px-2 py-3 rounded-3 text-center text-decoration-none" href="#!" target="_blank"><img class="rounded" src="../../assets/img/nav-icons/xbox.png" alt="" width="40" height="40" />
-                            <p class="mb-0 fw-medium text-800 text-truncate fs--2 pt-1">xbox</p>
-                        </a></div>
-                        <div class="col-4"><a class="d-block hover-bg-200 px-2 py-3 rounded-3 text-center text-decoration-none" href="#!" target="_blank"><img class="rounded" src="../../assets/img/nav-icons/trello.png" alt="" width="40" height="40" />
-                            <p class="mb-0 fw-medium text-800 text-truncate fs--2 pt-1">Kanban</p>
-                        </a></div>
-                        <div class="col-4"><a class="d-block hover-bg-200 px-2 py-3 rounded-3 text-center text-decoration-none" href="#!" target="_blank"><img class="rounded" src="../../assets/img/nav-icons/hp.png" alt="" width="40" height="40" />
-                            <p class="mb-0 fw-medium text-800 text-truncate fs--2 pt-1">Hp</p>
-                        </a></div>
-                        <div class="col-12">
-                        <hr class="my-3 mx-n3 bg-200" />
-                        </div>
-                        <div class="col-4"><a class="d-block hover-bg-200 px-2 py-3 rounded-3 text-center text-decoration-none" href="#!" target="_blank"><img class="rounded" src="../../assets/img/nav-icons/linkedin.png" alt="" width="40" height="40" />
-                            <p class="mb-0 fw-medium text-800 text-truncate fs--2 pt-1">Linkedin</p>
-                        </a></div>
-                        <div class="col-4"><a class="d-block hover-bg-200 px-2 py-3 rounded-3 text-center text-decoration-none" href="#!" target="_blank"><img class="rounded" src="../../assets/img/nav-icons/twitter.png" alt="" width="40" height="40" />
-                            <p class="mb-0 fw-medium text-800 text-truncate fs--2 pt-1">Twitter</p>
-                        </a></div>
-                        <div class="col-4"><a class="d-block hover-bg-200 px-2 py-3 rounded-3 text-center text-decoration-none" href="#!" target="_blank"><img class="rounded" src="../../assets/img/nav-icons/facebook.png" alt="" width="40" height="40" />
-                            <p class="mb-0 fw-medium text-800 text-truncate fs--2 pt-1">Facebook</p>
-                        </a></div>
-                        <div class="col-4"><a class="d-block hover-bg-200 px-2 py-3 rounded-3 text-center text-decoration-none" href="#!" target="_blank"><img class="rounded" src="../../assets/img/nav-icons/instagram.png" alt="" width="40" height="40" />
-                            <p class="mb-0 fw-medium text-800 text-truncate fs--2 pt-1">Instagram</p>
-                        </a></div>
-                        <div class="col-4"><a class="d-block hover-bg-200 px-2 py-3 rounded-3 text-center text-decoration-none" href="#!" target="_blank"><img class="rounded" src="../../assets/img/nav-icons/pinterest.png" alt="" width="40" height="40" />
-                            <p class="mb-0 fw-medium text-800 text-truncate fs--2 pt-1">Pinterest</p>
-                        </a></div>
-                        <div class="col-4"><a class="d-block hover-bg-200 px-2 py-3 rounded-3 text-center text-decoration-none" href="#!" target="_blank"><img class="rounded" src="../../assets/img/nav-icons/slack.png" alt="" width="40" height="40" />
-                            <p class="mb-0 fw-medium text-800 text-truncate fs--2 pt-1">Slack</p>
-                        </a></div>
-                        <div class="col-4"><a class="d-block hover-bg-200 px-2 py-3 rounded-3 text-center text-decoration-none" href="#!" target="_blank"><img class="rounded" src="../../assets/img/nav-icons/deviantart.png" alt="" width="40" height="40" />
-                            <p class="mb-0 fw-medium text-800 text-truncate fs--2 pt-1">Deviantart</p>
-                        </a></div>
-                        <div class="col-4"><a class="d-block hover-bg-200 px-2 py-3 rounded-3 text-center text-decoration-none" href="../../app/events/event-detail.html" target="_blank">
-                            <div class="avatar avatar-2xl">
-                            <div class="avatar-name rounded-circle bg-primary-subtle text-primary"><span class="fs-2">E</span></div>
+
+            <!-- <li class="nav-item dropdown px-1">
+                <a class="nav-link fa-icon-wait nine-dots p-1" id="navbarDropdownMenu" role="button" data-hide-on-body-scroll="data-hide-on-body-scroll" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="43" viewBox="0 0 16 16" fill="none">
+                        <circle cx="2" cy="2" r="2" fill="#6C6E71"></circle>
+                        <circle cx="2" cy="8" r="2" fill="#6C6E71"></circle>
+                        <circle cx="2" cy="14" r="2" fill="#6C6E71"></circle>
+                        <circle cx="8" cy="8" r="2" fill="#6C6E71"></circle>
+                        <circle cx="8" cy="14" r="2" fill="#6C6E71"></circle>
+                        <circle cx="14" cy="8" r="2" fill="#6C6E71"></circle>
+                        <circle cx="14" cy="14" r="2" fill="#6C6E71"></circle>
+                        <circle cx="8" cy="2" r="2" fill="#6C6E71"></circle>
+                        <circle cx="14" cy="2" r="2" fill="#6C6E71"></circle>
+                    </svg>
+                </a>
+                <div class="dropdown-menu dropdown-caret dropdown-caret dropdown-menu-end dropdown-menu-card dropdown-caret-bg" aria-labelledby="navbarDropdownMenu">
+                    <div class="card shadow-none">
+                    <div class="scrollbar-overlay nine-dots-dropdown">
+                        <div class="card-body px-3">
+                        <div class="row text-center gx-0 gy-0">
+                            <div class="col-4"><a class="d-block hover-bg-200 px-2 py-3 rounded-3 text-center text-decoration-none" href="../../pages/user/profile.html" target="_blank">
+                                <div class="avatar avatar-2xl"> <img class="rounded-circle" src="../../assets/img/team/3.jpg" alt="" /></div>
+                                <p class="mb-0 fw-medium text-800 text-truncate fs--2">Account</p>
+                            </a></div>
+                            <div class="col-4"><a class="d-block hover-bg-200 px-2 py-3 rounded-3 text-center text-decoration-none" href="https://themewagon.com/" target="_blank"><img class="rounded" src="../../assets/img/nav-icons/themewagon.png" alt="" width="40" height="40" />
+                                <p class="mb-0 fw-medium text-800 text-truncate fs--2 pt-1">Themewagon</p>
+                            </a></div>
+                            <div class="col-4"><a class="d-block hover-bg-200 px-2 py-3 rounded-3 text-center text-decoration-none" href="https://mailbluster.com/" target="_blank"><img class="rounded" src="../../assets/img/nav-icons/mailbluster.png" alt="" width="40" height="40" />
+                                <p class="mb-0 fw-medium text-800 text-truncate fs--2 pt-1">Mailbluster</p>
+                            </a></div>
+                            <div class="col-4"><a class="d-block hover-bg-200 px-2 py-3 rounded-3 text-center text-decoration-none" href="#!" target="_blank"><img class="rounded" src="../../assets/img/nav-icons/google.png" alt="" width="40" height="40" />
+                                <p class="mb-0 fw-medium text-800 text-truncate fs--2 pt-1">Google</p>
+                            </a></div>
+                            <div class="col-4"><a class="d-block hover-bg-200 px-2 py-3 rounded-3 text-center text-decoration-none" href="#!" target="_blank"><img class="rounded" src="../../assets/img/nav-icons/spotify.png" alt="" width="40" height="40" />
+                                <p class="mb-0 fw-medium text-800 text-truncate fs--2 pt-1">Spotify</p>
+                            </a></div>
+                            <div class="col-4"><a class="d-block hover-bg-200 px-2 py-3 rounded-3 text-center text-decoration-none" href="#!" target="_blank"><img class="rounded" src="../../assets/img/nav-icons/steam.png" alt="" width="40" height="40" />
+                                <p class="mb-0 fw-medium text-800 text-truncate fs--2 pt-1">Steam</p>
+                            </a></div>
+                            <div class="col-4"><a class="d-block hover-bg-200 px-2 py-3 rounded-3 text-center text-decoration-none" href="#!" target="_blank"><img class="rounded" src="../../assets/img/nav-icons/github-light.png" alt="" width="40" height="40" />
+                                <p class="mb-0 fw-medium text-800 text-truncate fs--2 pt-1">Github</p>
+                            </a></div>
+                            <div class="col-4"><a class="d-block hover-bg-200 px-2 py-3 rounded-3 text-center text-decoration-none" href="#!" target="_blank"><img class="rounded" src="../../assets/img/nav-icons/discord.png" alt="" width="40" height="40" />
+                                <p class="mb-0 fw-medium text-800 text-truncate fs--2 pt-1">Discord</p>
+                            </a></div>
+                            <div class="col-4"><a class="d-block hover-bg-200 px-2 py-3 rounded-3 text-center text-decoration-none" href="#!" target="_blank"><img class="rounded" src="../../assets/img/nav-icons/xbox.png" alt="" width="40" height="40" />
+                                <p class="mb-0 fw-medium text-800 text-truncate fs--2 pt-1">xbox</p>
+                            </a></div>
+                            <div class="col-4"><a class="d-block hover-bg-200 px-2 py-3 rounded-3 text-center text-decoration-none" href="#!" target="_blank"><img class="rounded" src="../../assets/img/nav-icons/trello.png" alt="" width="40" height="40" />
+                                <p class="mb-0 fw-medium text-800 text-truncate fs--2 pt-1">Kanban</p>
+                            </a></div>
+                            <div class="col-4"><a class="d-block hover-bg-200 px-2 py-3 rounded-3 text-center text-decoration-none" href="#!" target="_blank"><img class="rounded" src="../../assets/img/nav-icons/hp.png" alt="" width="40" height="40" />
+                                <p class="mb-0 fw-medium text-800 text-truncate fs--2 pt-1">Hp</p>
+                            </a></div>
+                            <div class="col-12">
+                            <hr class="my-3 mx-n3 bg-200" />
                             </div>
-                            <p class="mb-0 fw-medium text-800 text-truncate fs--2">Events</p>
-                        </a></div>
-                        <div class="col-12"><a class="btn btn-outline-primary btn-sm mt-4" href="#!">Show more</a></div>
+                            <div class="col-4"><a class="d-block hover-bg-200 px-2 py-3 rounded-3 text-center text-decoration-none" href="#!" target="_blank"><img class="rounded" src="../../assets/img/nav-icons/linkedin.png" alt="" width="40" height="40" />
+                                <p class="mb-0 fw-medium text-800 text-truncate fs--2 pt-1">Linkedin</p>
+                            </a></div>
+                            <div class="col-4"><a class="d-block hover-bg-200 px-2 py-3 rounded-3 text-center text-decoration-none" href="#!" target="_blank"><img class="rounded" src="../../assets/img/nav-icons/twitter.png" alt="" width="40" height="40" />
+                                <p class="mb-0 fw-medium text-800 text-truncate fs--2 pt-1">Twitter</p>
+                            </a></div>
+                            <div class="col-4"><a class="d-block hover-bg-200 px-2 py-3 rounded-3 text-center text-decoration-none" href="#!" target="_blank"><img class="rounded" src="../../assets/img/nav-icons/facebook.png" alt="" width="40" height="40" />
+                                <p class="mb-0 fw-medium text-800 text-truncate fs--2 pt-1">Facebook</p>
+                            </a></div>
+                            <div class="col-4"><a class="d-block hover-bg-200 px-2 py-3 rounded-3 text-center text-decoration-none" href="#!" target="_blank"><img class="rounded" src="../../assets/img/nav-icons/instagram.png" alt="" width="40" height="40" />
+                                <p class="mb-0 fw-medium text-800 text-truncate fs--2 pt-1">Instagram</p>
+                            </a></div>
+                            <div class="col-4"><a class="d-block hover-bg-200 px-2 py-3 rounded-3 text-center text-decoration-none" href="#!" target="_blank"><img class="rounded" src="../../assets/img/nav-icons/pinterest.png" alt="" width="40" height="40" />
+                                <p class="mb-0 fw-medium text-800 text-truncate fs--2 pt-1">Pinterest</p>
+                            </a></div>
+                            <div class="col-4"><a class="d-block hover-bg-200 px-2 py-3 rounded-3 text-center text-decoration-none" href="#!" target="_blank"><img class="rounded" src="../../assets/img/nav-icons/slack.png" alt="" width="40" height="40" />
+                                <p class="mb-0 fw-medium text-800 text-truncate fs--2 pt-1">Slack</p>
+                            </a></div>
+                            <div class="col-4"><a class="d-block hover-bg-200 px-2 py-3 rounded-3 text-center text-decoration-none" href="#!" target="_blank"><img class="rounded" src="../../assets/img/nav-icons/deviantart.png" alt="" width="40" height="40" />
+                                <p class="mb-0 fw-medium text-800 text-truncate fs--2 pt-1">Deviantart</p>
+                            </a></div>
+                            <div class="col-4"><a class="d-block hover-bg-200 px-2 py-3 rounded-3 text-center text-decoration-none" href="../../app/events/event-detail.html" target="_blank">
+                                <div class="avatar avatar-2xl">
+                                <div class="avatar-name rounded-circle bg-primary-subtle text-primary"><span class="fs-2">E</span></div>
+                                </div>
+                                <p class="mb-0 fw-medium text-800 text-truncate fs--2">Events</p>
+                            </a></div>
+                            <div class="col-12"><a class="btn btn-outline-primary btn-sm mt-4" href="#!">Show more</a></div>
+                        </div>
+                        </div>
                     </div>
                     </div>
                 </div>
+            </li> -->
+            
+            <!-- 사용자 정보 영역 -->
+            <li class="nav-item dropdown">
+                <a class="nav-link pe-0 ps-2" id="navbarDropdownUser" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <div class="avatar avatar-xl">
+                        <img class="rounded-circle" src="../../assets/img/team/3-thumb.png" alt="" />
+                    </div>
+                </a>
+                <div class="dropdown-menu dropdown-caret dropdown-caret dropdown-menu-end py-0" aria-labelledby="navbarDropdownUser">
+                    <div class="bg-white dark__bg-1000 rounded-2 py-2">
+                        <a class="dropdown-item fw-bold text-warning" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="">
+                            <span class="fas fa-crown me-1"></span>
+                            <span>사용자 정보</span>
+                        </a>
+                        <!-- <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#!">?</a>
+                        <a class="dropdown-item" href="../../pages/user/profile.html">?</a>
+                        <a class="dropdown-item" href="#!">?</a> -->
+
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">?</a>
+                        <a class="dropdown-item" href="#">Logout</a>
+                    </div>
                 </div>
-            </div>
-
-            </li>
-            <li class="nav-item dropdown"><a class="nav-link pe-0 ps-2" id="navbarDropdownUser" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <div class="avatar avatar-xl">
-                <img class="rounded-circle" src="../../assets/img/team/3-thumb.png" alt="" />
-
-                </div>
-            </a>
-            <div class="dropdown-menu dropdown-caret dropdown-caret dropdown-menu-end py-0" aria-labelledby="navbarDropdownUser">
-                <div class="bg-white dark__bg-1000 rounded-2 py-2">
-                <a class="dropdown-item fw-bold text-warning" href="#!"><span class="fas fa-crown me-1"></span><span>Go Pro</span></a>
-
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#!">Set status</a>
-                <a class="dropdown-item" href="../../pages/user/profile.html">Profile &amp; account</a>
-                <a class="dropdown-item" href="#!">Feedback</a>
-
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="../../pages/user/settings.html">Settings</a>
-                <a class="dropdown-item" href="../../pages/authentication/card/logout.html">Logout</a>
-                </div>
-            </div>
             </li>
         </ul>
         </nav>
         <div class="card mb-3">
         <div class="bg-holder d-none d-lg-block bg-card" style="background-image:url(../../assets/img/icons/spot-illustrations/corner-4.png);">
         </div>
-        <!--/.bg-holder-->
+        <!-- 본 화면 -->
 
         <div class="card-body position-relative">
+<!-- ============================================================= -->
+            <ul class="nav nav-tabs mb-3" id="echart-tab-example" role="tablist" data-tab-has-echarts="data-tab-has-echarts">
+            <li class="nav-item" role="presentation"><button class="nav-link active" id="bar-chart-tab" data-bs-toggle="pill" data-bs-target="#bar-chart" type="button" role="tab" aria-controls="bar-chart" aria-selected="true">Bar Chart</button></li>
+            <li class="nav-item" role="presentation"><button class="nav-link" id="line-charts-tab" data-bs-toggle="pill" data-bs-target="#line-charts" type="button" role="tab" aria-controls="line-charts" aria-selected="false">Line Chart</button></li>
+            </ul>
+            <div class="tab-content" id="echart-tab-example-content">
+            <div class="tab-pane fade show active" id="bar-chart" role="tabpanel" aria-labelledby="bar-chart-tab">
+                <div class="echart-bar-top-products" data-echart-responsive="true" data-echart-tab="data-echart-tab"></div>
+            </div>
+            <div class="tab-pane fade" id="line-charts" role="tabpanel" aria-labelledby="line-charts-tab">
+                <div class="echart-line-total-sales" data-echart-responsive="true" data-echart-tab="data-echart-tab"></div>
+            </div>
+            </div>
+<!-- ============================================================= -->
+            <div class="position-relative light">
+            <div class="bg-holder rounded-2" style="background-image:url(../../assets/video/beach.jpg);"><video class="bg-video" autoplay="autoplay" loop="loop" muted="muted" playsinline="playsinline">
+                <source src="../../assets/video/beach.mp4" type="video/mp4" />
+                <source src="../../assets/video/beach.webm" type="video/webm" />
+                </video></div> <!--/.bg-holder-->
+            <div class="position-relative vh-75 d-flex flex-center">
+                <h4 class="text-white"></h4>
+            </div>
+            </div>
+<!-- ============================================================= -->
             <div class="row">
             <div class="col-lg-8">
                 <h3>Bulk Select</h3>
@@ -364,6 +410,7 @@
             </div>
         </div>
         </div>
+        
         <div class="card mb-3">
         <div class="card-body">
             <h5 class="mb-0" data-anchor="data-anchor">Bulk select consist of this following parts</h5>
@@ -503,109 +550,109 @@
             </div>
             <div class="tab-pane code-tab-pane" role="tabpanel" aria-labelledby="tab-dom-e2504a3e-31ef-4dd3-8c8f-8b7a64d2686a" id="dom-e2504a3e-31ef-4dd3-8c8f-8b7a64d2686a">
                 <pre class="scrollbar rounded-1" style="max-height:420px"><code class="language-html">&lt;div class=&quot;card shadow-none&quot;&gt;
-&lt;div class=&quot;card-body p-0 pb-3&quot;&gt;
-&lt;div class=&quot;d-flex align-items-center justify-content-end my-3&quot;&gt;
-    &lt;div id=&quot;bulk-select-replace-element&quot;&gt;
-    &lt;button class=&quot;btn btn-falcon-success btn-sm&quot; type=&quot;button&quot;&gt;&lt;span class=&quot;fas fa-plus&quot; data-fa-transform=&quot;shrink-3 down-2&quot;&gt;&lt;/span&gt;&lt;span class=&quot;ms-1&quot;&gt;New&lt;/span&gt;&lt;/button&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;d-none ms-3&quot; id=&quot;bulk-select-actions&quot;&gt;
-    &lt;div class=&quot;d-flex&quot;&gt;
-        &lt;select class=&quot;form-select form-select-sm&quot; aria-label=&quot;Bulk actions&quot;&gt;
-        &lt;option selected=&quot;selected&quot;&gt;Bulk actions&lt;/option&gt;
-        &lt;option value=&quot;Delete&quot;&gt;Delete&lt;/option&gt;
-        &lt;option value=&quot;Archive&quot;&gt;Archive&lt;/option&gt;
-        &lt;/select&gt;
-        &lt;button class=&quot;btn btn-falcon-danger btn-sm ms-2&quot; type=&quot;button&quot;&gt;Apply&lt;/button&gt;
-    &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;table-responsive scrollbar&quot;&gt;
-    &lt;table class=&quot;table mb-0&quot;&gt;
-    &lt;thead class=&quot;bg-200&quot;&gt;
-        &lt;tr&gt;
-        &lt;th class=&quot;align-middle white-space-nowrap&quot;&gt;
-            &lt;div class=&quot;form-check mb-0&quot;&gt;
-            &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; data-bulk-select='{&quot;body&quot;:&quot;bulk-select-body&quot;,&quot;actions&quot;:&quot;bulk-select-actions&quot;,&quot;replacedElement&quot;:&quot;bulk-select-replace-element&quot;}' /&gt;
-            &lt;/div&gt;
-        &lt;/th&gt;
-        &lt;th class=&quot;text-black dark__text-white align-middle&quot;&gt;Name&lt;/th&gt;
-        &lt;th class=&quot;text-black dark__text-white align-middle&quot;&gt;Nationality &lt;/th&gt;
-        &lt;th class=&quot;text-black dark__text-white align-middle&quot;&gt;Gender&lt;/th&gt;
-        &lt;th class=&quot;text-black dark__text-white align-middle white-space-nowrap pe-3&quot;&gt;Age&lt;/th&gt;
-        &lt;/tr&gt;
-    &lt;/thead&gt;
-    &lt;tbody id=&quot;bulk-select-body&quot;&gt;
-        &lt;tr&gt;
-        &lt;td class=&quot;align-middle white-space-nowrap&quot;&gt;
-            &lt;div class=&quot;form-check mb-0&quot;&gt;
-            &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; id=&quot;checkbox-1&quot; data-bulk-select-row=&quot;data-bulk-select-row&quot; /&gt;
-            &lt;/div&gt;
-        &lt;/td&gt;
-        &lt;th class=&quot;align-middle&quot;&gt;Kit Harington&lt;/th&gt;
-        &lt;td class=&quot;align-middle&quot;&gt;British&lt;/td&gt;
-        &lt;td class=&quot;align-middle&quot;&gt;Male&lt;/td&gt;
-        &lt;td class=&quot;align-middle white-space-nowrap text-end pe-3&quot;&gt;32&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-        &lt;td class=&quot;align-middle white-space-nowrap&quot;&gt;
-            &lt;div class=&quot;form-check mb-0&quot;&gt;
-            &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; id=&quot;checkbox-2&quot; data-bulk-select-row=&quot;data-bulk-select-row&quot; /&gt;
-            &lt;/div&gt;
-        &lt;/td&gt;
-        &lt;th class=&quot;align-middle&quot;&gt;Emilia Clarke&lt;/th&gt;
-        &lt;td class=&quot;align-middle&quot;&gt;British&lt;/td&gt;
-        &lt;td class=&quot;align-middle&quot;&gt;Female&lt;/td&gt;
-        &lt;td class=&quot;align-middle white-space-nowrap text-end pe-3&quot;&gt;32&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-        &lt;td class=&quot;align-middle white-space-nowrap&quot;&gt;
-            &lt;div class=&quot;form-check mb-0&quot;&gt;
-            &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; id=&quot;checkbox-3&quot; data-bulk-select-row=&quot;data-bulk-select-row&quot; /&gt;
-            &lt;/div&gt;
-        &lt;/td&gt;
-        &lt;th class=&quot;align-middle&quot;&gt;Peter Dinklage&lt;/th&gt;
-        &lt;td class=&quot;align-middle&quot;&gt;American&lt;/td&gt;
-        &lt;td class=&quot;align-middle&quot;&gt;Male&lt;/td&gt;
-        &lt;td class=&quot;align-middle white-space-nowrap text-end pe-3&quot;&gt;49&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-        &lt;td class=&quot;align-middle white-space-nowrap&quot;&gt;
-            &lt;div class=&quot;form-check mb-0&quot;&gt;
-            &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; id=&quot;checkbox-4&quot; data-bulk-select-row=&quot;data-bulk-select-row&quot; /&gt;
-            &lt;/div&gt;
-        &lt;/td&gt;
-        &lt;th class=&quot;align-middle&quot;&gt;Sean Bean&lt;/th&gt;
-        &lt;td class=&quot;align-middle&quot;&gt;British&lt;/td&gt;
-        &lt;td class=&quot;align-middle&quot;&gt;Male&lt;/td&gt;
-        &lt;td class=&quot;align-middle white-space-nowrap text-end pe-3&quot;&gt;59&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-        &lt;td class=&quot;align-middle white-space-nowrap&quot;&gt;
-            &lt;div class=&quot;form-check mb-0&quot;&gt;
-            &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; id=&quot;checkbox-5&quot; data-bulk-select-row=&quot;data-bulk-select-row&quot; /&gt;
-            &lt;/div&gt;
-        &lt;/td&gt;
-        &lt;th class=&quot;align-middle&quot;&gt;Maisie Williams&lt;/th&gt;
-        &lt;td class=&quot;align-middle&quot;&gt;British&lt;/td&gt;
-        &lt;td class=&quot;align-middle&quot;&gt;Female&lt;/td&gt;
-        &lt;td class=&quot;align-middle white-space-nowrap text-end pe-3&quot;&gt;21&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-        &lt;td class=&quot;align-middle white-space-nowrap&quot;&gt;
-            &lt;div class=&quot;form-check mb-0&quot;&gt;
-            &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; id=&quot;checkbox-6&quot; data-bulk-select-row=&quot;data-bulk-select-row&quot; /&gt;
-            &lt;/div&gt;
-        &lt;/td&gt;
-        &lt;th class=&quot;align-middle&quot;&gt;Sophie Turner&lt;/th&gt;
-        &lt;td class=&quot;align-middle&quot;&gt;British&lt;/td&gt;
-        &lt;td class=&quot;align-middle&quot;&gt;Female&lt;/td&gt;
-        &lt;td class=&quot;align-middle white-space-nowrap text-end pe-3&quot;&gt;23&lt;/td&gt;
-        &lt;/tr&gt;
-    &lt;/tbody&gt;
-    &lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;</code></pre>
+                    &lt;div class=&quot;card-body p-0 pb-3&quot;&gt;
+                    &lt;div class=&quot;d-flex align-items-center justify-content-end my-3&quot;&gt;
+                        &lt;div id=&quot;bulk-select-replace-element&quot;&gt;
+                        &lt;button class=&quot;btn btn-falcon-success btn-sm&quot; type=&quot;button&quot;&gt;&lt;span class=&quot;fas fa-plus&quot; data-fa-transform=&quot;shrink-3 down-2&quot;&gt;&lt;/span&gt;&lt;span class=&quot;ms-1&quot;&gt;New&lt;/span&gt;&lt;/button&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;d-none ms-3&quot; id=&quot;bulk-select-actions&quot;&gt;
+                        &lt;div class=&quot;d-flex&quot;&gt;
+                            &lt;select class=&quot;form-select form-select-sm&quot; aria-label=&quot;Bulk actions&quot;&gt;
+                            &lt;option selected=&quot;selected&quot;&gt;Bulk actions&lt;/option&gt;
+                            &lt;option value=&quot;Delete&quot;&gt;Delete&lt;/option&gt;
+                            &lt;option value=&quot;Archive&quot;&gt;Archive&lt;/option&gt;
+                            &lt;/select&gt;
+                            &lt;button class=&quot;btn btn-falcon-danger btn-sm ms-2&quot; type=&quot;button&quot;&gt;Apply&lt;/button&gt;
+                        &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;table-responsive scrollbar&quot;&gt;
+                        &lt;table class=&quot;table mb-0&quot;&gt;
+                        &lt;thead class=&quot;bg-200&quot;&gt;
+                            &lt;tr&gt;
+                            &lt;th class=&quot;align-middle white-space-nowrap&quot;&gt;
+                                &lt;div class=&quot;form-check mb-0&quot;&gt;
+                                &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; data-bulk-select='{&quot;body&quot;:&quot;bulk-select-body&quot;,&quot;actions&quot;:&quot;bulk-select-actions&quot;,&quot;replacedElement&quot;:&quot;bulk-select-replace-element&quot;}' /&gt;
+                                &lt;/div&gt;
+                            &lt;/th&gt;
+                            &lt;th class=&quot;text-black dark__text-white align-middle&quot;&gt;Name&lt;/th&gt;
+                            &lt;th class=&quot;text-black dark__text-white align-middle&quot;&gt;Nationality &lt;/th&gt;
+                            &lt;th class=&quot;text-black dark__text-white align-middle&quot;&gt;Gender&lt;/th&gt;
+                            &lt;th class=&quot;text-black dark__text-white align-middle white-space-nowrap pe-3&quot;&gt;Age&lt;/th&gt;
+                            &lt;/tr&gt;
+                        &lt;/thead&gt;
+                        &lt;tbody id=&quot;bulk-select-body&quot;&gt;
+                            &lt;tr&gt;
+                            &lt;td class=&quot;align-middle white-space-nowrap&quot;&gt;
+                                &lt;div class=&quot;form-check mb-0&quot;&gt;
+                                &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; id=&quot;checkbox-1&quot; data-bulk-select-row=&quot;data-bulk-select-row&quot; /&gt;
+                                &lt;/div&gt;
+                            &lt;/td&gt;
+                            &lt;th class=&quot;align-middle&quot;&gt;Kit Harington&lt;/th&gt;
+                            &lt;td class=&quot;align-middle&quot;&gt;British&lt;/td&gt;
+                            &lt;td class=&quot;align-middle&quot;&gt;Male&lt;/td&gt;
+                            &lt;td class=&quot;align-middle white-space-nowrap text-end pe-3&quot;&gt;32&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                            &lt;td class=&quot;align-middle white-space-nowrap&quot;&gt;
+                                &lt;div class=&quot;form-check mb-0&quot;&gt;
+                                &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; id=&quot;checkbox-2&quot; data-bulk-select-row=&quot;data-bulk-select-row&quot; /&gt;
+                                &lt;/div&gt;
+                            &lt;/td&gt;
+                            &lt;th class=&quot;align-middle&quot;&gt;Emilia Clarke&lt;/th&gt;
+                            &lt;td class=&quot;align-middle&quot;&gt;British&lt;/td&gt;
+                            &lt;td class=&quot;align-middle&quot;&gt;Female&lt;/td&gt;
+                            &lt;td class=&quot;align-middle white-space-nowrap text-end pe-3&quot;&gt;32&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                            &lt;td class=&quot;align-middle white-space-nowrap&quot;&gt;
+                                &lt;div class=&quot;form-check mb-0&quot;&gt;
+                                &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; id=&quot;checkbox-3&quot; data-bulk-select-row=&quot;data-bulk-select-row&quot; /&gt;
+                                &lt;/div&gt;
+                            &lt;/td&gt;
+                            &lt;th class=&quot;align-middle&quot;&gt;Peter Dinklage&lt;/th&gt;
+                            &lt;td class=&quot;align-middle&quot;&gt;American&lt;/td&gt;
+                            &lt;td class=&quot;align-middle&quot;&gt;Male&lt;/td&gt;
+                            &lt;td class=&quot;align-middle white-space-nowrap text-end pe-3&quot;&gt;49&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                            &lt;td class=&quot;align-middle white-space-nowrap&quot;&gt;
+                                &lt;div class=&quot;form-check mb-0&quot;&gt;
+                                &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; id=&quot;checkbox-4&quot; data-bulk-select-row=&quot;data-bulk-select-row&quot; /&gt;
+                                &lt;/div&gt;
+                            &lt;/td&gt;
+                            &lt;th class=&quot;align-middle&quot;&gt;Sean Bean&lt;/th&gt;
+                            &lt;td class=&quot;align-middle&quot;&gt;British&lt;/td&gt;
+                            &lt;td class=&quot;align-middle&quot;&gt;Male&lt;/td&gt;
+                            &lt;td class=&quot;align-middle white-space-nowrap text-end pe-3&quot;&gt;59&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                            &lt;td class=&quot;align-middle white-space-nowrap&quot;&gt;
+                                &lt;div class=&quot;form-check mb-0&quot;&gt;
+                                &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; id=&quot;checkbox-5&quot; data-bulk-select-row=&quot;data-bulk-select-row&quot; /&gt;
+                                &lt;/div&gt;
+                            &lt;/td&gt;
+                            &lt;th class=&quot;align-middle&quot;&gt;Maisie Williams&lt;/th&gt;
+                            &lt;td class=&quot;align-middle&quot;&gt;British&lt;/td&gt;
+                            &lt;td class=&quot;align-middle&quot;&gt;Female&lt;/td&gt;
+                            &lt;td class=&quot;align-middle white-space-nowrap text-end pe-3&quot;&gt;21&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                            &lt;td class=&quot;align-middle white-space-nowrap&quot;&gt;
+                                &lt;div class=&quot;form-check mb-0&quot;&gt;
+                                &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; id=&quot;checkbox-6&quot; data-bulk-select-row=&quot;data-bulk-select-row&quot; /&gt;
+                                &lt;/div&gt;
+                            &lt;/td&gt;
+                            &lt;th class=&quot;align-middle&quot;&gt;Sophie Turner&lt;/th&gt;
+                            &lt;td class=&quot;align-middle&quot;&gt;British&lt;/td&gt;
+                            &lt;td class=&quot;align-middle&quot;&gt;Female&lt;/td&gt;
+                            &lt;td class=&quot;align-middle white-space-nowrap text-end pe-3&quot;&gt;23&lt;/td&gt;
+                            &lt;/tr&gt;
+                        &lt;/tbody&gt;
+                        &lt;/table&gt;
+                    &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;/div&gt;</code></pre>
             </div>
             </div>
         </div>
